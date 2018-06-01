@@ -13,9 +13,6 @@ The goals / steps of this project are the following:
 * Reflect on your work in a written report
 
 
-[//]: # (Image References)
-
-[image1]: ./examples/grayscale.jpg "Grayscale"
 
 ---
 
@@ -23,25 +20,32 @@ The goals / steps of this project are the following:
 
 ### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
 
-My pipeline consisted of 5 steps. First, I converted the images to grayscale, then I .... 
+## Description
+The pipeline consists on six steps represented by six different functions:
 
-In order to draw a single line on the left and right lanes, I modified the draw_lines() function by ...
+- **grayAction**: Grayscale transform using **cv2.cvtColor** method.
+- **blurAction**: Applies a Gaussian Noise kernel to the provided image using **cv2.GaussianBlur** method.
+- **cannyAction**: Applies the Canny transform to find edges on the image using **cv2.Canny** method.
+- **maskAction**: Eliminate parts of the image that are not interesting in regards to the line detection 
+- **houghAction**: Returns an image with hough lines drawn.
+- **weighted_img**:  **houghAction** output merge with the original image to show line draw.
 
-If you'd like to include images to show how the pipeline works, here is how to include an image: 
+The output of image and video:
 
-![alt text][image1]
+- [test_output_image](test_output_image)
+- [test_output_video](test_output_video)
 
 
 ### 2. Identify potential shortcomings with your current pipeline
 
+- line on video shaking a lot
+- masked of image need improvement for video
+- Some point taking outside due to the brightness of that point
 
-One potential shortcoming would be what would happen when ... 
-
-Another shortcoming could be ...
 
 
 ### 3. Suggest possible improvements to your pipeline
 
-A possible improvement would be to ...
-
+- redesign and find better way to improve line draw
+- provide masked area for better look
 Another potential improvement could be to ...
