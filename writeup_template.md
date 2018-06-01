@@ -48,4 +48,13 @@ The output of image and video:
 
 - redesign and find better way to improve line draw
 - provide masked area for better look
+
+ 
 Another potential improvement could be to ...
+
+### Reference
+- [Hough Transform works](https://www.youtube.com/watch?v=4zHbI-fFIlI)
+- [RGB Normalization](http://akash0x53.github.io/blog/2013/04/29/RGB-Normalization/)
+- [Self-Driving Car Project Q&A](https://www.youtube.com/watch?v=hnXkCiM2RSg&index=1&list=PLAwxTw4SYaPkz3HerxrHlu1Seq8ZA7-5P)
+- [Lecture 18: Hough Transform](https://www.youtube.com/watch?v=hYcugbbf9ug)
+
